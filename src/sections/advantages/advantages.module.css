@@ -1,0 +1,59 @@
+.advantagesSection {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 13vw;
+    margin-top: 160px;
+    color: var(--color-light);
+    padding-inline: 80px;
+}
+
+.mainBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.title {
+    max-width: 648px;
+    margin-left: 16%;
+}
+
+.swiperAndDescription {
+    display: flex;
+    flex-direction: row;
+    gap: 124px;
+}
+
+.description {
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.button {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

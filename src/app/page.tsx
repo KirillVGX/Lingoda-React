@@ -1,3 +1,11 @@
+import Advantages from '@/sections/advantages/Advantages';
+import Hero from '@/sections/hero/Hero';
+
 export default function Home() {
-    return <h1>Header</h1>;
+    return (
+        <>
+            <Hero />
+            <Advantages />
+        </>
+    );
 }

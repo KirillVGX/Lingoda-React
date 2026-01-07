@@ -1,3 +1,16 @@
+:root {
+    --font-base: 'Neue Machina';
+    --font-heading: 'Montserrat';
+
+    --color-dark: hsla(0, 0%, 0%, 0.9);
+    --color-light: hsla(0, 0%, 100%, 1);
+    --color-background: hsla(0, 0%, 0%, 1);
+    --color-selector: hsla(77, 99%, 58%, 1);
+    --color-description: hsla(0, 0%, 84%, 1);
+    --color-dark-opacity: hsla(0, 0%, 0%, 0.7);
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +22,11 @@ body {
     flex-direction: column;
     align-items: center;
     color: var(--color-dark);
-    background: hsla(0, 0%, 100%, 1);
-    padding: 24px 16px 0 16px;
+    background: var(--color-background);
 }
 
 main {
-    max-width: 1520px;
+    max-width: 1930px;
     width: 100%;
     height: 100%;
 
@@ -38,4 +50,75 @@ a {
     clip-path: inset(50%);
     white-space: nowrap;
     border: 0;
+}
+
+.selector {
+    color: var(--color-selector);
+}
+
+/* TEXT */
+h1 {
+    font-family: var(--font-base);
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 95%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: var(--font-base);
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+h3 {
+    font-family: var(--font-base);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: var(--font-base);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+h5 {
+    font-family: var(--font-base);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+h6 {
+    font-family: var(--font-base);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+p {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 185%;
+    letter-spacing: 0%;
+}
+
+small {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: 12.6px;
+    line-height: 185%;
+    letter-spacing: 0%;
 }

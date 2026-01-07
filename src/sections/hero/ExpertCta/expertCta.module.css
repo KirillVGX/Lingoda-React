@@ -1,0 +1,96 @@
+.expertCta {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 166px;
+}
+
+.cardWrapper {
+    position: relative;
+    width: 450px;
+    height: 380px;
+    margin-right: 42px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 68px;
+    background: linear-gradient(128.28deg, #ffffff 2.56%, #999999 143.22%);
+    border: 1px solid hsla(0, 0%, 100%, 1);
+    border-radius: 52px;
+
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    z-index: 3;
+}
+
+.cardBg {
+    position: absolute;
+    inset: 0;
+}
+
+.cardBg1 {
+    background-color: hsla(0, 0%, 100%, 0.6);
+    height: 304px;
+    border-radius: 32px;
+    transform: translate(20px, 38px);
+    backdrop-filter: blur(32px);
+    z-index: 2;
+}
+
+.cardBg2 {
+    background-color: hsla(0, 0%, 100%, 0.4);
+    height: 244px;
+    border-radius: 26px;
+    transform: translate(38px, 68px);
+    backdrop-filter: blur(26px);
+    z-index: 1;
+}
+
+.card p {
+    color: var(--color-dark-opacity);
+}
+
+.quiz {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.answer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    background-color: var(--color-background);
+    color: var(--color-light);
+    padding: 8px;
+    padding-inline-start: 24px;
+    border-radius: 20px;
+}
+
+.variant {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+.socialsBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: fit-content;
+}
+
+.social {
+    aspect-ratio: 1;
+    background-color: var(--color-light);
+    border-radius: 50%;
+
+    padding: 10px 9px 5px 11px;
+}

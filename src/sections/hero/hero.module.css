@@ -1,0 +1,63 @@
+.heroSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: clamp(700px, calc(100vw - 80px), 900px);
+    padding-inline: 65px;
+    padding-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mainImage {
+    position: absolute;
+    left: 12%;
+    top: -5%;
+    height: 110%;
+    width: 90%;
+    z-index: 5;
+}
+
+.mainBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    margin-top: 30px;
+}
+
+.titleBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.title  {
+    width: 700px;
+}
+
+.title > h1,
+.titleAndCTA > h1 {
+    color: var(--color-light);
+}
+
+.marginLeft {
+    margin-left: auto;
+    width: fit-content;
+}
+
+.titleAndCTA {
+    display: inline-flex;
+    align-items: end;
+    gap: 36px;
+}
+
+.description {
+    align-self: center;
+    color: var(--color-description);
+    max-width: 370px;
+}
+
+.bgImage {
+    z-index: -1;
+}

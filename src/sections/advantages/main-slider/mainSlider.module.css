@@ -1,0 +1,72 @@
+.mainSwiper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+}
+
+.swiperTrack {
+    display: flex;
+    position: relative;
+}
+
+.card {
+    transition: transform .4s ease, filter .4s ease;
+    filter: brightness(0.2);
+    transform: scale(.8);
+    z-index: 1;
+    max-width: 300px;
+    width: 100%;
+    max-height: 358px;
+    height: auto;
+}
+
+.card[data-pos="0"] {
+    transform: scale(1);
+    filter: brightness(1);
+    z-index: 3;
+}
+
+.card[data-pos="1"] {
+    position: absolute;
+    transform: scale(1) translate(20px, 20px);
+    z-index: 2;
+}
+
+.card[data-pos="2"] {
+    position: absolute;
+    transform: scale(1) translate(40px, 40px);
+    z-index: 1;
+}
+
+.card img {
+    display: block;
+    pointer-events: none;
+    max-width: 300px;
+    width: 100%;
+    max-height: 358px;
+    height: auto;
+}
+
+.sliderButton {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderButton img {
+    width: 30px;
+    height: min-content;
+}

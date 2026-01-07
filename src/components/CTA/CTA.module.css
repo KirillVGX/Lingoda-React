@@ -1,0 +1,41 @@
+.CTAButton {
+    all: unset;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2px 2px 1px 36px;
+    border-radius: 86px;
+    background-color: hsla(77, 99%, 58%, 1);
+    gap: 20px;
+    height: min-content;
+}
+
+.boldText {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -1%;
+}
+
+.imageWrapper {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightWrapper {
+    background-color: var(--color-light);
+}
+
+.darkWrapper {
+    background-color: var(--color-background);
+}
