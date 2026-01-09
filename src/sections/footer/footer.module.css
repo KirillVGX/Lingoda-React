@@ -1,0 +1,71 @@
+.footer {
+    max-width: 1930px;
+    padding-inline: 65px;
+    width: 100%;
+    color: var(--color-light);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    list-style: none;
+}
+
+.contactNumber {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    color: var(--color-selector);
+}
+
+.imageContainer {
+    background-color: var(--color-selector);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 9px 8px 8px 9px;
+}
+
+.burgerButton {
+    all: unset;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: auto;
+    width: 230px;
+}
+
+.description {
+    max-width: 800px;
+    width: 100%;
+    color: var(--color-description);
+    text-align: center;
+}
+
+.copyRight {
+    max-width: 800px;
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+}

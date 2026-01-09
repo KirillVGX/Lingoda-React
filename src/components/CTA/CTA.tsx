@@ -3,24 +3,24 @@ import styles from './CTA.module.css';
 
 interface CTAProps {
     text?: string;
-    backgroundColor?: 'basic' | 'black' | 'light';
-    color?: 'black' | 'light';
+    backgroundColor?: 'basic' | 'dark' | 'light';
+    color?: 'darkColor' | 'lightColor';
     withArrow?: boolean;
-    arrowColor?: 'black' | 'light';
+    arrowColor?: 'dark' | 'light';
 }
 
 export default function CTA({
     text = 'Learn More',
     backgroundColor = 'basic',
-    color = 'light',
+    color = 'lightColor',
     withArrow = true,
     arrowColor = 'light',
 }: CTAProps) {
     const isLightBg = arrowColor === 'light';
 
     return (
-        <button className={styles.CTAButton} style={{backgroundColor}} >
-            <p className={`${withArrow ? styles.boldText : styles.thickText}`} style={{ color }}>{text}</p>
+        <button className={`${styles.CTAButton} ${withArrow ? '' : styles.padding} ${styles[backgroundColor]}`} >
+            <p className={`${withArrow ? styles.boldText : styles.thickText} ${styles[color]}`}>{text}</p>
             {withArrow && (
                 <span
                     className={`${styles.imageWrapper} ${

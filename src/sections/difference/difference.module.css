@@ -1,0 +1,76 @@
+.differenceSection {
+    z-index: 3;
+}
+
+.titleBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    margin-bottom: 40px;
+}
+
+.title {
+    max-width: 1516px;
+    text-align: center;
+}
+
+.desciption {
+    max-width: 602px;
+    text-align: center;
+}
+
+.differenceImages {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.tvWrapper {
+    position: relative;
+    width: 740px;
+    height: 567px;
+    z-index: 5;
+    margin-top: 40px;
+}
+
+.tvImage {
+    transform: scale(2);
+    pointer-events: none;
+}
+
+.englishBlock {
+    position: relative;
+    width: 540px;
+    height: 602px;
+}
+
+.imageWrapperEnglish {
+    pointer-events: none;
+}
+
+.englishBusinessBlock {
+    position: relative;
+    width: 547px;
+    height: 624px;
+}
+
+.imageBusiness {
+    pointer-events: none;
+}
+
+/* .imageContainer {
+    position: absolute;
+    right: -10%;
+    bottom: 0;
+    height: 152%;
+    width: 54%;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.image {
+    object-fit: contain;  
+    object-position: center;
+} */

@@ -1,0 +1,44 @@
+.levelContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    padding: 25px;
+
+    width: 500px;
+    height: 150px;
+    border-radius: 30px;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.levelContainer:hover {
+    background-color: var(--color-selector);
+}
+
+.level {
+    background-color: var(--color-selector);
+    padding: 14px 15px;
+    height: fit-content;
+    border-radius: 5px;
+
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100%;
+
+    transition: background-color 0.3s ease;
+}
+
+.levelContainer:hover .level {
+    background-color: var(--color-light);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

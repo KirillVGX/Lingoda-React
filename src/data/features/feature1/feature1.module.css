@@ -1,0 +1,31 @@
+.feature {
+    max-width: 850px;
+    width: 100%;
+    max-height: 472px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 51px;
+
+    background-color: var(--color-background);
+    color: var(--color-light);
+    border-radius: 54px;
+}
+
+.description {
+    max-width: 336px;
+    font-family: var(--font-heading);
+    color: var(--color-description);
+    font-weight: 400;
+    font-size: 16.63px;
+    line-height: 185%;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

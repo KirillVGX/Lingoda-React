@@ -1,0 +1,15 @@
+.featuresSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: fit-content;
+    z-index: 3;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 20px;
+}

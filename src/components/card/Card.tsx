@@ -20,6 +20,9 @@ export default function Card({ name, text, src, alt }: CardProps) {
             <div className={styles.info}>
                 <small className={styles.text}>{text}</small>
                 <span className={styles.name}>{name}</span>
+                <span className={styles.playButton}>
+                    <Image src='/images/icons/triangle.svg' alt='Play button' width={26.4} height={31} />
+                </span>
             </div>
         </div>
     );

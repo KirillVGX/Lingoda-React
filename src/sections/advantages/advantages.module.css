@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    gap: 13vw;
+    gap: clamp(6vw, 13vw, 300px);
     margin-top: 160px;
     color: var(--color-light);
     padding-inline: 80px;

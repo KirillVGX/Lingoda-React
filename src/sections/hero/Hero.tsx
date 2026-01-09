@@ -24,7 +24,7 @@ export default function Hero() {
                         </h1>
                         <div className={styles.titleAndCTA}>
                             <h1>Lingoda</h1>
-                            <CTA text="Get Started" />
+                            <CTA text="Get Started" color='darkColor' />
                         </div>
                     </div>
                     <p className={styles.description}>

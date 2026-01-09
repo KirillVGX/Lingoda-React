@@ -1,3 +1,7 @@
+.studentsSection {
+    margin-block: 150px;
+}
+
 .title {
     display: flex;
     flex-direction: column;

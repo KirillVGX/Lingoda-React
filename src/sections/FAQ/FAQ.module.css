@@ -1,0 +1,50 @@
+.FAQSection {
+    display: flex;
+    flex-direction: column;
+    gap: 108px;
+    margin-block: 100px 150px;
+}
+
+.titleBlock {
+    max-width: 1450px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    margin: 0 auto;
+}
+
+.titleAndBtn {
+    display: flex;
+    flex-direction: column;
+    max-width: 810px;
+    gap: 6px;
+    color: var(--color-light);
+}
+
+.withBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.description {
+    max-width: 470px;
+    margin-top: 20px;
+    color: var(--color-description);
+}
+
+.accordionSection {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+}
+
+.acordionBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
