@@ -4,9 +4,9 @@ import { useState } from 'react';
 import styles from './slider.module.css';
 
 const slides = [
-    { img: '/hero-slider/1.png', label: 'For business', styleName: 'fullImage' },
-    { img: '/hero-slider/4.png', label: 'Next' },
-    { img: '/hero-slider/5.png', label: 'Idea' },
+    { img: '/images/hero-slider/1.png', label: 'For business', styleName: 'fullImage' },
+    { img: '/images/hero-slider/4.png', label: 'Next' },
+    { img: '/images/hero-slider/5.png', label: 'Idea' },
 ];
 
 export default function Slider() {
@@ -39,7 +39,7 @@ export default function Slider() {
                 className={styles.sliderButton}
                 onClick={() => setIndex((i) => i + 1)}
             >
-                <img src="/right-arrow.svg" alt="next" />
+                <img src="/images/arrows/right-arrow.svg" alt="next" />
             </button>
         </div>
     );

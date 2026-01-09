@@ -4,9 +4,9 @@ import { useState } from 'react';
 import styles from './mainSlider.module.css';
 
 const slides = [
-    { img: '/advantages-slider/1.png', label: 'For business' },
-    { img: '/advantages-slider/2.png', label: 'Next' },
-    { img: '/advantages-slider/3.png', label: 'Idea' },
+    { img: '/images/advantages-slider/1.png', label: 'For business' },
+    { img: '/images/advantages-slider/2.png', label: 'Next' },
+    { img: '/images/advantages-slider/3.png', label: 'Idea' },
 ];
 
 export default function MainSlider() {
@@ -40,7 +40,7 @@ export default function MainSlider() {
                 onClick={() => setIndex((i) => i + 1)}
             >
                 <img
-                    src="/return-arrow.svg"
+                    src="/images/arrows/return-arrow.svg"
                     alt="next"
                 />
             </button>

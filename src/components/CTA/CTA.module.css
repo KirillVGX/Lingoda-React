@@ -11,6 +11,7 @@
     background-color: hsla(77, 99%, 58%, 1);
     gap: 20px;
     height: min-content;
+    width: fit-content;
 }
 
 .boldText {
@@ -38,4 +39,20 @@
 
 .darkWrapper {
     background-color: var(--color-background);
+}
+
+@media (max-width: 1550px) {
+    .CTAButton {
+        gap: 14px;
+        padding-left: 24px;
+    }
+
+    .imageWrapper {
+        width: 45px;
+        height: 45px;
+    }
+
+    .boldText {
+        font-size: 16px;
+    }
 }

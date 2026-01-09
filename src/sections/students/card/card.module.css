@@ -1,0 +1,77 @@
+.card {
+    position: relative;
+    width: 100%;
+    height: 640px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    border-radius: 52px;
+    border: 3px solid transparent;
+
+    transition: border-color 0.4s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    border-color: var(--color-selector);
+}
+
+.image {
+    position: absolute;
+    z-index: 1;
+    border-radius: 52px;
+}
+
+.info {
+    position: relative;
+    z-index: 2;
+    border-radius: 48px;
+    border: 1px solid var(--color-light);
+    background-color: var(--color-background);
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 60px 40px 0 40px;
+    transition: border-color 0.4s ease, border-width 0.4s ease;
+}
+
+.card:hover .info {
+    border-color: var(--color-selector);
+    border-width: 2px;
+}
+
+.text {
+    color: var(--color-light);
+    text-align: center;
+    max-width: 345px;
+    font-size: 16px;
+}
+
+.name {
+    width: 71%;
+    background-color: var(--color-light);
+    color: var(--color-background);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 15px;
+    border-top-left-radius: 27px;
+    border-top-right-radius: 27px;
+
+    font-family: var(--font-base);
+    font-weight: 400;
+    font-size: 32.4px;
+    line-height: 100%;
+
+    transition: background-color 0.4s ease;
+}
+
+.card:hover .name {
+    background-color: var(--color-selector);
+}

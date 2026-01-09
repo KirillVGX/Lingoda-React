@@ -8,7 +8,6 @@
     --color-selector: hsla(77, 99%, 58%, 1);
     --color-description: hsla(0, 0%, 84%, 1);
     --color-dark-opacity: hsla(0, 0%, 0%, 0.7);
-
 }
 
 * {
@@ -32,6 +31,8 @@ main {
 
     display: flex;
     flex-direction: column;
+
+    margin-bottom: 200px;
 }
 
 a {
@@ -121,4 +122,37 @@ small {
     font-size: 12.6px;
     line-height: 185%;
     letter-spacing: 0%;
+}
+
+@media (max-width: 1650px) {
+    h1 {
+        font-size: 70px;
+        line-height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 36.88px;
+    }
+
+    p {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 390px) {
+    h1 {
+        font-size: 30px;
+    }
 }

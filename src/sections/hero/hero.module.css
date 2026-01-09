@@ -7,16 +7,22 @@
     padding-inline: 65px;
     padding-top: 80px;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .mainImage {
     position: absolute;
-    left: 12%;
-    top: -5%;
-    height: 110%;
+    left: 10%;
+    top: -2%;
+    height: 106%;
     width: 90%;
     z-index: 5;
+    pointer-events: none;
+}
+
+.image {
+    object-fit: contain;  
+    object-position: center;
 }
 
 .mainBlock {
@@ -60,4 +66,104 @@
 
 .bgImage {
     z-index: -1;
+}
+
+.mainImageMobile {
+    position: relative;
+    width: 100%;
+    max-width: 767px;      
+    aspect-ratio: 3 / 4;   
+    margin: 0 auto;        
+    overflow: hidden;
+    border-radius: 16px;  
+}
+
+.imageMobile {
+    object-fit: cover;     
+    object-position: center;
+}
+
+@media (max-width: 1800px) {
+    .mainImage {
+        width: 80%;
+        left: 19%;
+        top: 0;
+    }
+}
+
+@media (max-width: 1550px) {
+    .mainImage {
+        top: 5%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .heroSection {
+        padding: 50px 40px 0 40px;
+    }
+
+    .title {
+        width: 640px;
+    }
+
+    .titleAndCTA {
+        gap: 18px;
+    }
+
+    /* .mainImage {
+        top: 2%;
+        left: 15%;
+        width: 90%;
+        height: 100%;
+    } */
+}
+
+@media (max-width: 1240px) {
+    .heroSection {
+        flex-direction: column;
+        gap: 36px;
+        height: auto;
+    }
+
+    .mainBlock {
+        align-items: center;
+        margin-top: 0;
+        gap: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heroSection {
+        padding-inline: 0;
+        gap: 0;
+        padding-top: 40px;
+    }
+
+    .mainBlock {
+        padding-inline: 40px;
+    }
+
+    .titleAndCTA, .title {
+        display: contents;
+    } 
+
+    .titleBlock {
+        gap: 0;
+        align-items: center;
+    }
+
+    .titleAndCTA > :nth-child(2) {
+        order: 1;
+    }
+
+    .description {
+        margin-block: 15px;
+        text-wrap: wrap;
+        text-align: center;
+        max-width: calc(100vw - (80px + 60px));
+    }
+
+    .marginLeft {
+        margin-left: 0;
+    }
 }

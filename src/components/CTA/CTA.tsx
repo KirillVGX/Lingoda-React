@@ -29,14 +29,14 @@ export default function CTA({
                 >
                     {isLightBg ? (
                         <Image
-                            src="/light-arrow.svg"
+                            src="/images/arrows/light-arrow.svg"
                             alt="arrow"
                             width={12}
                             height={12}
                         />
                     ) : (
                         <Image
-                            src="/dark-arrow.svg"
+                            src="/images/arrows/dark-arrow.svg"
                             alt="arrow"
                             width={12}
                             height={12}

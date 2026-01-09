@@ -92,3 +92,25 @@
     width: 15px;
     height: min-content;
 }
+
+@media (max-width: 1650px) {
+    .card {
+        max-width: 450px;
+    }
+
+    .fullImage {
+        min-width: 450px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .sliderContainer {
+        z-index: 6;
+    }
+}
+
+@media (max-width: 1240px) {
+    .sliderContainer {
+        margin-right: 12%;
+    }
+}

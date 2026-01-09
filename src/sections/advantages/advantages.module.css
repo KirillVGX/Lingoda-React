@@ -6,6 +6,9 @@
     margin-top: 160px;
     color: var(--color-light);
     padding-inline: 80px;
+    overflow: hidden;
+    padding-bottom: 50px;
+    position: relative;
 }
 
 .mainBlock {
@@ -56,4 +59,64 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.bgImage {
+    z-index: -1;
+}
+
+@media (max-width: 1650px) {
+    .advantagesSection {
+        gap: 6vw;
+    }
+}
+
+@media (max-width: 1440px) {
+    .mainBlock {
+        gap: 24px;
+    }
+
+    .title {
+        max-width: 450px;
+        margin-left: 7%;
+        text-align: center;
+    }
+
+    .swiperAndDescription {
+        gap: 64px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .mainBlock {
+        align-items: center;
+    }
+
+    .title {
+        margin-left: 0;
+    }
+
+    .description {
+        align-items: center;
+    }
+
+    .description p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .advantagesSection {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .advantagesSection {
+        margin-top: 48px;
+    }
+
+    .mainBlock {
+        gap: 15px;
+    }
 }

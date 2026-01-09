@@ -1,21 +1,20 @@
-import Image from 'next/image';
 import styles from './secondarySlider.module.css';
 
 const slides = [
     {
-        img: '/advantages-slider/4.jpg',
+        img: '/images/advantages-slider/4.jpg',
         label: 'Expertly-designed curriculums',
         description:
             'Follow our structured curriculum at each level, or choose the classes you’d like to take for complete flexibility.',
     },
     {
-        img: '/advantages-slider/5.jpg',
+        img: '/images/advantages-slider/5.jpg',
         label: 'Expertly-designed curriculums',
         description:
             'Follow our structured curriculum at each level, or choose the classes you’d like to take for complete flexibility.',
     },
     {
-        img: '/advantages-slider/4.jpg',
+        img: '/images/advantages-slider/4.jpg',
         label: 'Expertly-designed curriculums',
         description:
             'Follow our structured curriculum at each level, or choose the classes you’d like to take for complete flexibility.',
