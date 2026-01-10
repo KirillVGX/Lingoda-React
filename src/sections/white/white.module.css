@@ -1,0 +1,44 @@
+.whiteSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 80px;
+    gap: 100px;
+    border-radius: 60px;
+    background-color: var(--color-light);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.leftSpiral,
+.rightSpiral {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    z-index: 1; 
+    pointer-events: none;
+}
+
+.leftSpiral {
+    bottom: 7%;
+    right: 6%;
+    transform: scale(2);
+}
+
+.rightSpiral {
+    bottom: 7%;
+    left: 6%;
+    transform: scale(2);
+}
+
+.leftSpiral img,
+.rightSpiral img {
+    object-fit: contain;
+}
+
+@media (max-width: 1450px) {
+    .whiteSection {
+        padding: 60px 40px;
+    }
+}

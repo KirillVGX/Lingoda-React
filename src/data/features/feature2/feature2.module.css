@@ -34,3 +34,34 @@
     max-width: 369px;
     margin-inline: 15%;
 }
+
+@media (max-width: 1850px) {
+    .titleText {
+        font-size: 70px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 1680px) {
+    .titleText {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 1530px) {
+    .titleText {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .feature {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .titleBlock {
+        max-width: 560px;
+    }
+}

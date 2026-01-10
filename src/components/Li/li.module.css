@@ -27,3 +27,9 @@
 .liTextDark {
     color: var(--color-dark);
 }
+
+@media (max-width: 1530px) {
+    .liText {
+        font-size: 18px;
+    }
+}

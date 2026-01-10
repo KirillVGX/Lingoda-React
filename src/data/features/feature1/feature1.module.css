@@ -29,3 +29,20 @@
     flex-direction: column;
     gap: 24px;
 }
+
+@media (max-width: 1530px) {
+    .list {
+        gap: 16px;
+    }
+
+    .description {
+        font-size: 14px;
+        max-width: 282px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .feature {
+        padding: 40px;
+    }
+}

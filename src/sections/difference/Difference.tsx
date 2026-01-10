@@ -16,8 +16,12 @@ export default function Difference() {
             </div>
             <div className={styles.differenceImages}>
                 <div className={styles.englishBlock}>
-                    {/* <div className={`${styles.cardBgEnglish} ${styles.cardBgEnglish1}`}></div>
-                <div className={`${styles.cardBgEnglish} ${styles.cardBgEnglish2}`}></div> */}
+                    <div
+                        className={`${styles.cardBgEnglish} ${styles.cardBgEnglish1}`}
+                    />
+                    <div
+                        className={`${styles.cardBgEnglish} ${styles.cardBgEnglish2}`}
+                    />
                     <div className={styles.imageWrapperEnglish}>
                         <Image
                             src="/images/difference/english.png"
@@ -38,8 +42,12 @@ export default function Difference() {
                 </div>
 
                 <div className={styles.englishBusinessBlock}>
-                    {/* <div className={`${styles.cardBgBusiness} ${styles.cardBgBusiness1}`}></div>
-                <div className={`${styles.cardBgBusiness} ${styles.cardBgBusiness2}`}></div> */}
+                    <div
+                        className={`${styles.cardBgBusiness} ${styles.cardBgBusiness1}`}
+                    />
+                    <div
+                        className={`${styles.cardBgBusiness} ${styles.cardBgBusiness2}`}
+                    />
                     <div className={styles.imageWrapperBusiness}>
                         <Image
                             src="/images/difference/business-english.png"

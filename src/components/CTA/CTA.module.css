@@ -43,7 +43,7 @@
 .boldText {
     font-family: var(--font-heading);
     font-weight: 600;
-    font-size: 18px;
+    font-size: 18px !important;
     line-height: 100%;
     letter-spacing: -1%;
 }
@@ -74,7 +74,7 @@
     background-color: var(--color-background);
 }
 
-@media (max-width: 1550px) {
+/* @media (max-width: 1550px) {
     .CTAButton {
         gap: 14px;
         padding-left: 24px;
@@ -88,4 +88,4 @@
     .boldText {
         font-size: 16px;
     }
-}
+} */
