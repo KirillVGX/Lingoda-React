@@ -8,13 +8,13 @@ import White from '@/sections/white/white';
 export default function Home() {
     return (
         <>
-            <Hero />
-            <Advantages />
+            {/* <Hero />
+            <Advantages /> */}
             <Students />
-            <White />
+            {/* <White />
             <FAQ />
             <hr className="hr" />
-            <Footer />
+            <Footer /> */}
         </>
     );
 }

@@ -33,3 +33,14 @@
         font-size: 18px;
     }
 }
+
+@media (max-width: 680px) {
+    .liText {
+        font-size: 10px;
+    }
+    
+    .listItem {
+        align-items: center;
+        gap: 16px;
+    }
+}

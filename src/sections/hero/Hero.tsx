@@ -38,14 +38,14 @@ export default function Hero() {
             {isTablet && <ExpertCta />}
             {isTablet ? (
                 <Image
-                    src="/hero-bg.png"
+                    src="/images/bg/hero-bg.png"
                     alt="spiral"
                     fill
                     className={styles.bgImage}
                 />
             ) : (
                 <Image
-                    src="/hero-bg-mobile.png"
+                    src="/images/bg/hero-bg-mobile.png"
                     alt="spiral"
                     fill
                     className={styles.bgImage}
@@ -55,7 +55,7 @@ export default function Hero() {
             {isMac && (
                 <div className={styles.mainImage}>
                     <Image
-                        src="/main-girl.png"
+                        src="/images/bg/main-girl.png"
                         alt="Main girl"
                         fill
                         className={styles.image}

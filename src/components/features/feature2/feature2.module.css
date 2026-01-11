@@ -65,3 +65,26 @@
         max-width: 560px;
     }
 }
+
+@media (max-width: 680px) {
+    .feature {
+        padding: 20px;
+        border-radius: 22px;
+        align-items: center;
+    }
+
+    .titleBlock {
+        max-width: 340px;
+        width: 100%;
+    }
+
+    .titleText {
+        font-size: 30px;
+    }
+
+    .description {
+        max-width: 195px;
+        margin-inline: 35% 0;
+        font-size: 8px;
+    }
+}

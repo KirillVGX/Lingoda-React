@@ -6,6 +6,31 @@ import Modal from '@/components/modal/Modal';
 import { useMediaQuery } from '@/hooks/useMediaQuery';
 import { useState } from 'react';
 
+function Ellipse() {
+    return (
+        <span>
+            <Image
+                src="/images/icons/ellipse.svg"
+                alt="ellipse"
+                width={10}
+                height={10}
+            />
+        </span>
+    );
+}
+
+interface LiProps {
+    text: string;
+}
+
+function Li({ text }: LiProps) {
+    return (
+        <li className={styles.listItem}>
+            <h6>{text}</h6>
+        </li>
+    );
+}
+
 export default function Header() {
     const isTablet = useMediaQuery('(min-width: 768px)');
     const [isOpen, setIsOpen] = useState(false);
@@ -24,42 +49,13 @@ export default function Header() {
                 <>
                     <nav className={styles.nav}>
                         <ul className={styles.list}>
-                            <li className={styles.listItem}>
-                                <h6>Languages</h6>
-                            </li>
-                            <span>
-                                <Image
-                                    src="/images/icons/ellipse.svg"
-                                    alt="ellipse"
-                                    width={10}
-                                    height={10}
-                                />
-                            </span>
-                            <li className={styles.listItem}>
-                                <h6>How it works</h6>
-                            </li>
-                            <span>
-                                <Image
-                                    src="/images/icons/ellipse.svg"
-                                    alt="ellipse"
-                                    width={10}
-                                    height={10}
-                                />
-                            </span>
-                            <li className={styles.listItem}>
-                                <h6>Sprint</h6>
-                            </li>
-                            <span>
-                                <Image
-                                    src="/images/icons/ellipse.svg"
-                                    alt="ellipse"
-                                    width={10}
-                                    height={10}
-                                />
-                            </span>
-                            <li className={styles.listItem}>
-                                <h6>More</h6>
-                            </li>
+                            <Li text='Languages' />
+                            <Ellipse />
+                            <Li text='How it work' />
+                            <Ellipse />
+                            <Li text='Sprint' />
+                            <Ellipse />
+                            <Li text='More' />
                         </ul>
                     </nav>
 
@@ -95,7 +91,9 @@ export default function Header() {
             <Modal
                 isOpen={isOpen}
                 onClose={() => setIsOpen(false)}
-            ><div className=""></div></Modal>
+            >
+                <div className=""></div>
+            </Modal>
         </header>
     );
 }

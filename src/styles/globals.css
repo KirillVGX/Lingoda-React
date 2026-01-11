@@ -137,6 +137,10 @@ small {
 }
 
 @media (max-width: 768px) {
+    body {
+        margin-bottom: 20px;
+    }
+
     h1 {
         font-size: 48px;
     }

@@ -42,3 +42,9 @@
         padding: 60px 40px;
     }
 }
+
+@media (max-width: 680px) {
+    .whiteSection {
+        padding: 60px 26px;
+    }
+}

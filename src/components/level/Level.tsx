@@ -7,7 +7,7 @@ export default function LevelCard({ level, title, text }: Level) {
             <span className={styles.level}>{level}</span>
             <div className={styles.description}>
                 <h5 className={styles.title}>{title}</h5>
-                <p className={styles.title}>{text}</p>
+                <p className={styles.text}>{text}</p>
             </div>
         </div>
     );

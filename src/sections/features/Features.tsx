@@ -1,8 +1,8 @@
 import styles from './features.module.css';
-import Feature1 from '@/data/features/feature1/Feature1';
-import Feature3 from '@/data/features/feature3/Feature3';
-import Feature2 from '@/data/features/feature2/Feature2';
-import Feature4 from '@/data/features/feature4/Feature4';
+import Feature1 from '@/components/features/feature1/Feature1';
+import Feature3 from '@/components/features/feature3/Feature3';
+import Feature2 from '@/components/features/feature2/Feature2';
+import Feature4 from '@/components/features/feature4/Feature4';
 
 export default function Features() {
     return (

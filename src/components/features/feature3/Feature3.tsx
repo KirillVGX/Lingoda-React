@@ -1,6 +1,7 @@
 import styles from './feature3.module.css';
 import CTA from '@/components/CTA/CTA';
 import Li from '@/components/Li/Li';
+import Image from 'next/image';
 
 const listItems = [
     'Learn anytime – at your pace',
@@ -31,6 +32,15 @@ export default function Feature3() {
                 backgroundColor="dark"
                 withArrow={false}
             />
+
+            <div className={styles.imageContainer}>
+                <Image
+                    src='/images/bg/feature3.png'
+                    alt=""
+                    fill
+                    className={styles.image}
+                />
+            </div>
         </div>
     );
 }

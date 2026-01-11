@@ -69,3 +69,31 @@
     margin-top: 40px;
     text-align: center;
 }
+
+@media (max-width: 1024px) {
+    .footer {
+        gap: 20px;
+        padding-inline: 20px;
+    }
+
+    .head {
+        flex-wrap: wrap;
+        gap: 0px 24px;
+    }
+
+    .nav {
+        order: 1;
+        margin: 0 auto;
+    }
+
+    .copyRight {
+        margin-top: 0;
+        max-width: calc(100vw - (40px + 90px));
+    }
+}
+
+@media (max-width: 768px) {
+    .head {
+        justify-content: center;
+    }
+}

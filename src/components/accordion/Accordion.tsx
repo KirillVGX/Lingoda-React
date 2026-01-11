@@ -34,6 +34,7 @@ export function Accordion({
                         alt="toggle"
                         width={20}
                         height={20}
+                        className={styles.image}
                     />
                 </span>
             </div>

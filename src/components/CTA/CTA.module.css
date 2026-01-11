@@ -17,6 +17,11 @@
     padding: 19.25px 62.5px;
 }
 
+.arrow {
+    width: 12px;
+    height: 12px;
+}
+
 /* BACKGROUND */
 .basic {
     background-color: var(--color-selector);
@@ -89,3 +94,33 @@
         font-size: 16px;
     }
 } */
+
+@media (max-width: 680px) {
+    .CTAButton {
+        gap: 14px;
+        padding: 1px;
+        padding-left: 25px;
+    }
+    
+    .padding {
+        padding: 10.6px 25px;
+    }
+    
+    .thickText {
+        font-size: 9px;
+    }
+
+    .boldText {
+        font-size: 10px !important;
+    }
+
+    .imageWrapper {
+        width: 42px;
+        height: 42px;
+    }
+
+    .arrow {
+        width: 8px;
+        height: 8px;
+    }
+}

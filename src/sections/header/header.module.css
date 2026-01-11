@@ -1,13 +1,15 @@
 .header {
     max-width: 1930px;
-    padding-inline: 65px;
     width: 100%;
     height: 80px;
     color: var(--color-light);
+    padding-inline: 65px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 0 24px;
 }
 
 .list {
@@ -15,6 +17,10 @@
     flex-direction: row;
     gap: 24px;
     list-style: none;
+}
+
+.listItem {
+    text-wrap: nowrap;
 }
 
 .contactNumber {
@@ -44,6 +50,20 @@
 .logo {
     height: auto;
     width: 230px;
+}
+
+@media (max-width: 1124px) {
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .nav {
+        margin: 0 auto;
+    }
+
+    .nav {
+        order: 1;
+    }
 }
 
 @media (max-width: 768px) {

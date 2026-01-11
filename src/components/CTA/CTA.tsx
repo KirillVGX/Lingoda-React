@@ -1,5 +1,6 @@
-import Image from 'next/image';
 import styles from './CTA.module.css';
+import Image from 'next/image';
+import clsx from 'clsx';
 
 interface CTAProps {
     text?: string;
@@ -7,6 +8,7 @@ interface CTAProps {
     color?: 'darkColor' | 'lightColor';
     withArrow?: boolean;
     arrowColor?: 'dark' | 'light';
+    arrowBg?: boolean;
 }
 
 export default function CTA({
@@ -15,33 +17,47 @@ export default function CTA({
     color = 'lightColor',
     withArrow = true,
     arrowColor = 'light',
+    arrowBg
 }: CTAProps) {
-    const isLightBg = arrowColor === 'light';
+    const isLightArrow = arrowColor === 'light';
+    const arrowBackground = arrowBg ? '#FFF' : '';
+    let arrowSrc = isLightArrow
+        ? '/images/arrows/light-arrow.svg'
+        : '/images/arrows/dark-arrow.svg';
+
+    if (arrowBg) arrowSrc = '/images/arrows/dark-arrow.svg'
 
     return (
-        <button className={`${styles.CTAButton} ${withArrow ? '' : styles.padding} ${styles[backgroundColor]}`} >
-            <p className={`${withArrow ? styles.boldText : styles.thickText} ${styles[color]}`}>{text}</p>
+        <button
+            className={clsx(
+                styles.CTAButton,
+                styles[backgroundColor],
+                !withArrow && styles.padding
+            )}
+            type='button'
+        >
+            <p
+                className={`${withArrow ? styles.boldText : styles.thickText} ${
+                    styles[color]
+                }`}
+            >
+                {text}
+            </p>
             {withArrow && (
                 <span
                     className={`${styles.imageWrapper} ${
-                        isLightBg ? styles.darkWrapper : styles.lightWrapper
+                        isLightArrow ? styles.darkWrapper : styles.lightWrapper
                     }`}
+                    style={{backgroundColor: arrowBackground}}
                 >
-                    {isLightBg ? (
-                        <Image
-                            src="/images/arrows/light-arrow.svg"
-                            alt="arrow"
-                            width={12}
-                            height={12}
-                        />
-                    ) : (
-                        <Image
-                            src="/images/arrows/dark-arrow.svg"
-                            alt="arrow"
-                            width={12}
-                            height={12}
-                        />
-                    )}
+                    <Image
+                        src={arrowSrc}
+                        alt=""
+                        aria-hidden="true"
+                        width={12}
+                        height={12}
+                        className={styles.arrow}
+                    />
                 </span>
             )}
         </button>
