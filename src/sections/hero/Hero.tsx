@@ -66,7 +66,7 @@ export default function Hero() {
             {!isTablet && (
                 <div className={styles.mainImageMobile}>
                     <Image
-                        src="/main-girl.png"
+                        src="/images/bg/main-girl.png"
                         alt="Main girl"
                         fill
                         className={styles.imageMobile}
