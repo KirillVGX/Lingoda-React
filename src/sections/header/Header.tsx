@@ -49,13 +49,13 @@ export default function Header() {
                 <>
                     <nav className={styles.nav}>
                         <ul className={styles.list}>
-                            <Li text='Languages' />
+                            <Li text="Languages" />
                             <Ellipse />
-                            <Li text='How it work' />
+                            <Li text="How it work" />
                             <Ellipse />
-                            <Li text='Sprint' />
+                            <Li text="Sprint" />
                             <Ellipse />
-                            <Li text='More' />
+                            <Li text="More" />
                         </ul>
                     </nav>
 
@@ -92,7 +92,17 @@ export default function Header() {
                 isOpen={isOpen}
                 onClose={() => setIsOpen(false)}
             >
-                <div className=""></div>
+                <nav className={styles.nav}>
+                    <ul className={styles.list}>
+                        <Li text="Languages" />
+                        <Ellipse />
+                        <Li text="How it work" />
+                        <Ellipse />
+                        <Li text="Sprint" />
+                        <Ellipse />
+                        <Li text="More" />
+                    </ul>
+                </nav>
             </Modal>
         </header>
     );

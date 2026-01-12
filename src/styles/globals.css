@@ -22,7 +22,7 @@ body {
     align-items: center;
     color: var(--color-dark);
     background: var(--color-background);
-    margin-bottom: 160px;
+    margin-bottom: 120px;
 }
 
 main {
@@ -138,7 +138,7 @@ small {
 
 @media (max-width: 768px) {
     body {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     h1 {

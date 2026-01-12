@@ -96,3 +96,112 @@
 .card:hover .playButton {
     background-color: var(--color-selector);
 }
+
+@media (max-width: 1700px) {
+    .card {
+        height: 570px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .name {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .card {
+        height: 520px;
+        border-radius: 44px;
+        border-width: 2px;
+    }
+
+    .info {
+        padding: 40px 25px 0 25px;
+        border-radius: 40px;
+    }
+
+    .card:hover .info {
+        border-width: 1px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    .name {
+        font-size: 24px;
+        padding-block: 12px;
+        width: 60%;
+    }
+
+    .playButton {
+        width: 60px;
+        height: 60px;
+    }
+
+    .playButtonImage {
+        width: 22.6px;
+        height: 26.6px;
+    }
+}
+
+@media (max-width: 1324px) {
+    .card {
+        height: 450px;
+    }
+
+    .info {
+        gap: 14px;
+    }
+
+    .text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        height: 340px;
+        border-radius: 25px;
+    }
+
+    .text {
+        font-size: 7px;
+    }
+
+    .name {
+        font-size: 18px;
+        padding-block: 8px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .info {
+        padding: 30px 20px 0 20px;
+        border-radius: 25px;
+    }
+
+    .playButton {
+        width: 37px;
+        height: 37px;
+        top: -17px;
+    }
+
+    .playButtonImage {
+        width: 14.14px;
+        height: 16.66px;
+    }
+}
+
+@media (max-width: 420px) {
+    .card {
+        height: 300px;
+    }
+
+    .text {
+        font-size: 6px;
+    }
+}

@@ -23,6 +23,14 @@ export default function Modal({ isOpen, onClose, children }: ModalProps) {
                 className={styles.modal}
                 onClick={(e) => e.stopPropagation()}
             >
+                <Image
+                    src="/images/logo.svg"
+                    alt="Logo"
+                    width={140}
+                    height={40}
+                    className={styles.logoModal}
+                />
+
                 <button
                     className={styles.closeButton}
                     onClick={onClose}

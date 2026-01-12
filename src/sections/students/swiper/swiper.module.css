@@ -1,28 +1,31 @@
 /* SWIPER */
 .swiper {
-    max-width: calc(4 * 500px + 3 * 40px);
-    margin-inline: auto;
-    overflow: hidden;
-    perspective: 1800px;
-    position: relative;
+    perspective: 1200px !important;
 }
 
-:global(.swiper-slide-active),
-:global(.swiper-slide-next) {
-    transform: translateZ(0) rotateY(0deg) !important;
-    z-index: 3;
+:global(.swiper-wrapper) {
+    transform-style: preserve-3d !important;
 }
 
-:global(.swiper-slide-prev) {
-    transform: rotateY(-15deg) translateZ(-50px) !important;
-}
-
-:global(.swiper-slide-next + .swiper-slide) {
-    transform: rotateY(15deg) translateZ(-50px) !important;
-}
-
+/* Правый */
 :global(.swiper-slide) {
-    width: 500px !important;
+    transition: transform 0.5s ease, opacity 0.5s ease !important;
+    transform: rotateY(-30deg) translateZ(40px) translateX(-10px) scale(1) !important;
+}
+
+/* Левый */
+:global(.swiper-slide-active) {
+    transform: rotateY(30deg) translateZ(40px) translateX(10px) scale(1) !important;
+}
+
+/* Левый центр */
+:global(.swiper-slide-next) {
+    transform: rotateY(0deg) translateZ(0) scale(1) !important;
+}
+
+/* Правый центр */
+:global(.swiper-slide-next + .swiper-slide) {
+    transform: rotateY(0deg) translateZ(0) scale(1) !important;
 }
 
 /* MASK */
@@ -66,7 +69,6 @@
     opacity: 1;
 }
 
-
 .pagination {
     display: flex;
     justify-content: center;
@@ -85,4 +87,47 @@
 
 :global(.swiper-pagination-bullet-active) {
     background: var(--color-light);
+}
+
+@media (max-width: 1120px) {
+    .swiper::before,
+    .swiper::after {
+        width: 0;
+        height: 0;
+    }
+
+    /* Левый */
+    :global(.swiper-slide-active) {
+        transform: rotateY(0deg) translateZ(0px) translateX(0px) scale(1) !important;
+    }
+
+    .swiper {
+        padding: 0 20px;
+    }
+
+    .pagination {
+        margin-top: 40px;
+        gap: 8px;
+    }
+
+    .bullet {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 460px) {
+    .swiper {
+        padding-inline: 0;
+    }
+
+    .pagination {
+        margin-top: 40px;
+        gap: 16px;
+    }
+
+    .bullet {
+        width: 11px;
+        height: 11px;
+    }
 }

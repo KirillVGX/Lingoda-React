@@ -1,4 +1,3 @@
-import Header from '@/sections/header/Header';
 import '@/styles/fonts.css';
 import '@/styles/globals.css';
 
@@ -13,10 +12,7 @@ export default function RootLayout({
                 <title>Lingoda</title>
             </head>
 
-            <body>
-                <Header />
-                <main>{children}</main>
-            </body>
+            <body>{children}</body>
         </html>
     );
 }

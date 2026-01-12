@@ -6,7 +6,7 @@ type CardProps = {
     text: string;
     src: string;
     alt: string;
-}
+};
 
 export default function Card({ name, text, src, alt }: CardProps) {
     return (
@@ -21,7 +21,13 @@ export default function Card({ name, text, src, alt }: CardProps) {
                 <small className={styles.text}>{text}</small>
                 <span className={styles.name}>{name}</span>
                 <span className={styles.playButton}>
-                    <Image src='/images/icons/triangle.svg' alt='Play button' width={26.4} height={31} />
+                    <Image
+                        src="/images/icons/triangle.svg"
+                        alt="Play button"
+                        width={26.4}
+                        height={31}
+                        className={styles.playButtonImage}
+                    />
                 </span>
             </div>
         </div>

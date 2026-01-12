@@ -11,9 +11,9 @@
 }
 
 .card {
-    transition: transform .4s ease, filter .4s ease;
+    transition: transform 0.4s ease, filter 0.4s ease;
     filter: brightness(0.2);
-    transform: scale(.8);
+    transform: scale(0.8);
     z-index: 1;
     max-width: 300px;
     width: 100%;
@@ -21,19 +21,19 @@
     height: auto;
 }
 
-.card[data-pos="0"] {
+.card[data-pos='0'] {
     transform: scale(1);
     filter: brightness(1);
     z-index: 3;
 }
 
-.card[data-pos="1"] {
+.card[data-pos='1'] {
     position: absolute;
     transform: scale(1) translate(20px, 20px);
     z-index: 2;
 }
 
-.card[data-pos="2"] {
+.card[data-pos='2'] {
     position: absolute;
     transform: scale(1) translate(40px, 40px);
     z-index: 1;
@@ -64,10 +64,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.sliderButton:hover {
+    background-color: #9a9292;
 }
 
 .sliderButton img {
     width: 30px;
     height: min-content;
 }
-

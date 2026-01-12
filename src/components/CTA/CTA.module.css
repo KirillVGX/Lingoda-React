@@ -25,14 +25,29 @@
 /* BACKGROUND */
 .basic {
     background-color: var(--color-selector);
+    transition: background-color 0.3s ease;
+}
+
+.basic:hover {
+    background-color: hsla(77, 99%, 58%, 0.35);
 }
 
 .light {
     background-color: var(--color-light);
+    transition: background-color 0.3s ease;
+}
+
+.light:hover {
+    background-color: #9a9292;
 }
 
 .dark {
     background-color: var(--color-background);
+    transition: background-color 0.3s ease;
+}
+
+.dark:hover {
+    background-color: hsla(0, 0%, 16%, 1);
 }
 
 /* COLOR */
@@ -101,11 +116,11 @@
         padding: 1px;
         padding-left: 25px;
     }
-    
+
     .padding {
         padding: 10.6px 25px;
     }
-    
+
     .thickText {
         font-size: 9px;
     }

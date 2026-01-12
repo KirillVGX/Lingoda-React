@@ -22,3 +22,14 @@
     margin: 0 auto;
     margin-block: 24px 48px;
 }
+
+@media (max-width: 768px) {
+    .studentsSection {
+        margin-block: 60px;
+    }
+
+    .description {
+        font-size: 9px;
+        max-width: calc(100vw - (40px + 80px));
+    }
+}
